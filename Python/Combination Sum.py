@@ -6,7 +6,7 @@ class Solution(object):
     """
     def combinationSum(self, cans, t):
         if cans == None or len(cans) == 0:
-            return
+            return []
         res = []
         cans.sort()
         self.find(cans, t, 0, [], res)
